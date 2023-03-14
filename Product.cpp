@@ -25,7 +25,7 @@ int main(int nNumberoofArgs, char* pszArgs[]){
         }
         
         cout << nProduct << " * " << nValue;
-        nProduct *+ nValue;
+        nProduct *= nValue;
         cout << " is " << nProduct << endl;
     }
     
