@@ -7,7 +7,7 @@ using namespace std;
 // retorna algumas series de numeros 
 // digitados pelo usuario e sai da loop
 // quando entra um numero negativo
-int smSequence (){
+int sumSequence (){
 
     // cria uma variavel que será adicionado os numeros digitados pelo usuario
     int nAccumulator = 0;
@@ -17,7 +17,7 @@ int smSequence (){
         // le outra variavel digitada pelo usuario
         int nValue;
         cout << "Next: ";
-        cin >> nVaule;
+        cin >> nValue;
 
         // sai se a nValue for negativa
         if (nValue < 0){
@@ -39,7 +39,7 @@ int main(int nNumberofArgs, char* pszArgs[]){
         << "print the sum and start over with a new\n"
         << "sequence. "
         << "Enter two negative in a row to ende the\n"
-        << "progrram." << endl;
+        << "program." << endl;
 
     // fica em uma loop pegando input do usuario
     // ate ele entra com numero negativo
