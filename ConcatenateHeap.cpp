@@ -18,7 +18,7 @@ char* concatenateString(const char szSrc1[], const char szSrc2[]){
     
     // copia a segunda string para o fim da primeira
     for(int nS = 0; szSrc2[nS] != '\0'; nT++, nS++){
-        pszTarget[nT] = szSrc1[nS];
+        pszTarget[nT] = szSrc2[nS];
     }
     
     // adiciona um terminador para o pszTarget
