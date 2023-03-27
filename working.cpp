@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
@@ -14,7 +6,7 @@ using namespace std;
 // Armazena o nome e o numero de segurança social
 class Person{
     public:
-    char szFisrtName[128];
+    char szFirstName[128];
     char szLastName[128];
     int nSocialSecurityNumber;
 };
@@ -53,7 +45,7 @@ int getPeople(Person people[], int nMaxSize){
             break;
         }
         
-        people[index] = getPerson    
+        people[index] = getPerson();    
         
     }
     return index;
@@ -62,12 +54,12 @@ int getPeople(Person people[], int nMaxSize){
 //mostra a pessoa no display default
 void displayPerson(Person person){
     cout << "First name: " << person.szFirstName << endl;
-    cout << "Last name: " << person.szLastNmae << endl;
+    cout << "Last name: " << person.szLastName << endl;
     cout << "Social Security number: " << person.nSocialSecurityNumber << endl;
 }
 
 void displayPeople(Person people[], int nCount){
-    for(int index = 0; index < nCout; index++){
+    for(int index = 0; index < nCount; index++){
         displayPerson(people[index]);
     }
 }
@@ -79,8 +71,8 @@ void sortPeople(Person people[], int nCount){
       nSwaps = 0;
       for(int n = 0; n < (nCount - 1); n++){
         
-        if(people[n].nSocialSecurityNumber > pelple[n+1].nSocialSecurityNumber){
-          person temp = people[n+1];
+        if(people[n].nSocialSecurityNumber > people[n+1].nSocialSecurityNumber){
+          Person temp = people[n+1];
           people[n+1] = people[n];
           people[n] = temp;
           nSwaps++;
