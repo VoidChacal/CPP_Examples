@@ -66,18 +66,39 @@ void displayPerson(Person person){
     cout << "Social Security number: " << person.nSocialSecurityNumber << endl;
 }
 
-vooid displayPeople(Person people[], int nCount){
+void displayPeople(Person people[], int nCount){
     for(int index = 0; index < nCout; index++){
         displayPerson(people[index]);
     }
 }
 
 void sortPeople(Person people[], int nCount){
+    int nSwaps = 1;
+    while(nSwaps != 0){
     
+      nSwaps = 0;
+      for(int n = 0; n < (nCount - 1); n++){
+        
+        if(people[n].nSocialSecurityNumber > pelple[n+1].nSocialSecurityNumber){
+          person temp = people[n+1];
+          people[n+1] = people[n];
+          people[n] = temp;
+          nSwaps++;
+        }
+      }
+    }
 }
 int main()
 {
-    cout<<"Hello World";
-
+  Person people[128];
+  cout << "Read name/social security information\n";
+  int nCount = getPeople(people, 128);
+  
+  sortPeople(people, nCount);
+  
+  cout << "\nHere is the list sorted by "
+    << "social security number" << endl;
+   displayPeople(people, nCount);
+  
     return 0;
 }
