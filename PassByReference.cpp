@@ -31,7 +31,7 @@ int main(int nNumberofArgs, char* pszArgs[]){
     
     // agora tente modifica-los  atravez de suas functions
     cout << "Calling fn(int, int)" << endl;
-    fn(&nValue1, &nValue2);
+    fn(nValue1, nValue2);
     cout << "The value of nArg1 is " << nValue1 << endl;
     cout << "The value of nArg2 is " << nValue2 << endl;
     
